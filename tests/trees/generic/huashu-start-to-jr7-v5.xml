@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root BTCPP_format="4" main_tree_to_execute="HuashuStartToJR7">
+  <BehaviorTree ID="HuashuStartToJR7">
+    <RobotTask name="华数起始至腰部JR7测试" request_timeout_ms="100000000">
+      <Sequence name="初始化至腰部JR7">
+        <HrcsiSetDO name="数字输出 DO1=0" model="0" do_num="1" value="0" />
+        <HrcsiSetDO name="数字输出 DO2=0" model="0" do_num="2" value="0" />
+        <HrcsiSetDO name="数字输出 DO3=0" model="0" do_num="3" value="0" />
+        <HrcsiSetDO name="右臂电爪夹紧 DO4=0" model="0" do_num="4" value="0" />
+        <HrcsiSetDO name="右臂电爪吸气 DO5=0" model="0" do_num="5" value="0" />
+        <HrcsiSetDO name="左臂电爪夹紧 DO6=0" model="0" do_num="6" value="0" />
+        <HrcsiSetDO name="左臂电爪吸气 DO7=0" model="0" do_num="7" value="0" />
+        <HrcsiSetDO name="右臂左吸嘴 DO8=0" model="0" do_num="8" value="0" />
+        <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+        <HrcsiSetDO name="右臂左升降气缸 DO10=0" model="0" do_num="10" value="0" />
+        <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+        <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+        <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+        <HrcsiSetDO name="左臂中间吸嘴 DO14=0" model="0" do_num="14" value="0" />
+        <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+        <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+        <HrcsiSetDO name="左臂中间升降气缸 DO17=0" model="0" do_num="17" value="0" />
+        <HrcsiSetDO name="主盒治具真空 DO18=0" model="0" do_num="18" value="0" />
+        <HrcsiSetDO name="内盒治具真空 DO19=0" model="0" do_num="19" value="0" />
+        <HrcsiSetDO name="数字输出 DO20=0" model="0" do_num="20" value="0" />
+        <HrcsiSetDO name="数字输出 DO21=0" model="0" do_num="21" value="0" />
+        <HrcsiSetDO name="数字输出 DO22=0" model="0" do_num="22" value="0" />
+        <HrcsiSetDO name="数字输出 DO23=0" model="0" do_num="23" value="0" />
+        <HrcsiSetDO name="数字输出 DO24=0" model="0" do_num="24" value="0" />
+        <RobotSync name="同步：左臂、右臂">
+          <RobotMoveJ name="左臂：左臂待机位" model="0" target="JR3" speed="v5" />
+          <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+        </RobotSync>
+        <RobotMoveJ name="腰部：腰部原点" model="2" target="JR6" speed="v5" />
+        <RobotWait name="左臂等待 10 ms" model="0" msec="10" />
+        <RobotSync name="同步：左臂、右臂">
+          <RobotMoveJ name="左臂：左臂取空盒过度位" model="0" target="JR10" speed="v5" />
+          <RobotMoveJ name="右臂：右臂腰部旋转避让位" model="1" target="JR1" speed="v5" />
+        </RobotSync>
+        <RobotMoveJ name="腰部：腰部左臂取料旋转位" model="2" target="JR7" speed="v5" />
+      </Sequence>
+    </RobotTask>
+  </BehaviorTree>
+</root>

@@ -1,0 +1,8 @@
+{
+  "program": "huashu-main-speed",
+  "rows": 309,
+  "frames": 456,
+  "speed_override": "v5",
+  "source_sha256": "347270121ffe272c3f10e794f30a9c689e14dbf37ae007b94c1b4824757513c1",
+  "robot_commands_sent": 0
+}

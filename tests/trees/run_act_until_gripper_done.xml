@@ -1,0 +1,21 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RunOnce then_skip="false">
+      <RunActUntilGripperDone
+          robot_sel="0"
+          subsystem_name="ActSocketInference#0"
+          gripper_model="4"
+          closed_mm="5"
+          closed_stable_ms="200"
+          finish_opening_mm="50"
+          tolerance_mm="2"
+          stable_ms="500"
+          timeout_ms="120000"
+          feedback_timeout_ms="1000"
+          command_timeout_ms="2000"
+          phase="{act_phase}"
+          opening_mm="{gripper_opening_mm}"
+          error="{act_error}"/>
+    </RunOnce>
+  </BehaviorTree>
+</root>

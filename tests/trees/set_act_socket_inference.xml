@@ -1,0 +1,15 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <!-- 整段流程只执行一次；完成后持续 tick 也不会重新发送设置命令。 -->
+    <RunOnce then_skip="false">
+      <Sequence>
+        <SetActSocketInference
+            robot_sel="0;1"
+            update_enable="1"
+            send_enable="0"/>
+        <!-- 设置成功后执行这里的下一个节点，将占位节点替换成实际动作。 -->
+        <AlwaysSuccess name="NextNodePlaceholder"/>
+      </Sequence>
+    </RunOnce>
+  </BehaviorTree>
+</root>

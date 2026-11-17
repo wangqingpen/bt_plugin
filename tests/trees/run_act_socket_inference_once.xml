@@ -1,0 +1,7 @@
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RunOnce then_skip="false">
+      <RunActSocketInferenceOnce robot_sel="0" timeout_ms="10000"/>
+    </RunOnce>
+  </BehaviorTree>
+</root>

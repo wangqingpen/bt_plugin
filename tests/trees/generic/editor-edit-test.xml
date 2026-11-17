@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="HuashuEditable">
+    <RobotTask name="华数单次包装任务" request_timeout_ms="100000000">
+      <Sequence name="包装主流程">
+        <Sequence name="初始化与回待机位">
+          <HrcsiSetDO name="数字输出 DO2=0" model="0" do_num="2" value="0" />
+          <HrcsiSetDO name="数字输出 DO1=0" model="0" do_num="1" value="0" />
+          <HrcsiSetDO name="数字输出 DO3=0" model="0" do_num="3" value="0" />
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=0" model="0" do_num="4" value="0" />
+          <HrcsiSetDO name="右臂电爪吸气 DO5=0" model="0" do_num="5" value="0" />
+          <HrcsiSetDO name="左臂电爪夹紧 DO6=0" model="0" do_num="6" value="0" />
+          <HrcsiSetDO name="左臂电爪吸气 DO7=0" model="0" do_num="7" value="0" />
+          <HrcsiSetDO name="右臂左吸嘴 DO8=0" model="0" do_num="8" value="0" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=0" model="0" do_num="10" value="0" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <HrcsiSetDO name="左臂中间吸嘴 DO14=0" model="0" do_num="14" value="0" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+          <HrcsiSetDO name="左臂中间升降气缸 DO17=0" model="0" do_num="17" value="0" />
+          <HrcsiSetDO name="主盒治具真空 DO18=0" model="0" do_num="18" value="0" />
+          <HrcsiSetDO name="内盒治具真空 DO19=0" model="0" do_num="19" value="0" />
+          <HrcsiSetDO name="数字输出 DO20=0" model="0" do_num="20" value="0" />
+          <HrcsiSetDO name="数字输出 DO21=0" model="0" do_num="21" value="0" />
+          <HrcsiSetDO name="数字输出 DO22=0" model="0" do_num="22" value="0" />
+          <HrcsiSetDO name="数字输出 DO23=0" model="0" do_num="23" value="0" />
+          <HrcsiSetDO name="数字输出 DO24=0" model="0" do_num="24" value="0" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂待机位" model="0" target="OFFLINE_EDIT_POINT" speed="v10" />
+            <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+          </RobotSync>
+          <RobotMoveJ name="腰部：腰部原点" model="2" target="JR6" speed="v5" />
+          <RobotWait name="左臂等待 10 ms" model="0" msec="10" />
+        </Sequence>
+        <Sequence name="取空盒并放到主定位">
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂取空盒过度位" model="0" target="JR10" speed="v5" />
+            <RobotMoveJ name="右臂：右臂腰部旋转避让位" model="1" target="JR1" speed="v5" />
+          </RobotSync>
+          <RobotMoveJ name="腰部：腰部左臂取料旋转位" model="2" target="JR7" speed="v5" />
+          <RobotMoveL name="左臂：扫码1" model="0" target="LR80-wobj" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂取空盒上方" model="0" target="LR7-wobj" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=1" model="0" do_num="16" value="1" />
+          <RobotWait name="左臂等待 200 ms" model="0" msec="200" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂取空盒" model="0" target="LR8-wobj" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=1" model="0" do_num="13" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂电爪夹紧 DO6=1" model="0" do_num="6" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂取空盒上方" model="0" target="LR7-wobj" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="左臂：左臂取空盒过度位" model="0" target="JR10" speed="v5" />
+          <RobotMoveJ name="腰部：腰部原点" model="2" target="JR6" speed="v5" />
+          <RobotMoveJ name="左臂：左臂待机位" model="0" target="JR3" speed="v5" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂放主盒定位空盒过度位" model="0" target="JR11" speed="v5" />
+            <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+          </RobotSync>
+          <RobotMoveL name="左臂：左臂放空盒上方" model="0" target="LR10" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂放空盒位" model="0" target="LR11" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="主盒治具真空 DO18=1" model="0" do_num="18" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂电爪夹紧 DO6=0" model="0" do_num="6" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂放完空盒向左偏移过度位" model="0" target="LR12" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="左臂：左臂主盒定位取盒盖过度点" model="0" target="JR12" speed="v5" />
+          <RobotMoveL name="左臂：左臂主盒定位取盒盖上方" model="0" target="LR14" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+        </Sequence>
+        <Sequence name="取放盒盖与手机托板">
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=1" model="0" do_num="16" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂主盒定位取盒盖" model="0" target="LR15" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=1" model="0" do_num="13" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 200 ms" model="0" msec="200" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂主盒定位取盒盖上方" model="0" target="LR14" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂主盒定位取完盒盖过度位" model="0" target="LR16" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂主盒缓存放盒盖上方" model="0" target="LR17" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂主盒缓存放盒盖" model="0" target="LR18" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒缓存放盒盖上方" model="0" target="LR17" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂主定位台取手机托板上方" model="1" target="LR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=1" model="0" do_num="4" value="1" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=1" model="0" do_num="10" value="1" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=1" model="0" do_num="11" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒缓存放盒盖上方" model="0" target="LR17" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂主定位台取手机托板" model="1" target="LR21" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+        </Sequence>
+        <Sequence name="放托板并转移配件盒">
+          <HrcsiSetDO name="右臂左吸嘴 DO8=1" model="0" do_num="8" value="1" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=1" model="0" do_num="9" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="右臂：右臂主定位台取手机托板上方" model="1" target="LR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒定位取完盒盖过度位" model="0" target="LR16" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取完手机托板过度点" model="1" target="LR22" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主定位吸充电器盒上方" model="0" target="LR26" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板上方" model="1" target="LR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主定位吸充电器盒" model="0" target="LR27" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板" model="1" target="LR24" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=1" model="0" do_num="13" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 200 ms" model="0" msec="200" />
+          <HrcsiSetDO name="右臂左吸嘴 DO8=0" model="0" do_num="8" value="0" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 200 ms" model="0" msec="200" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主定位吸充电器盒上方" model="0" target="LR26" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板上方" model="1" target="LR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=0" model="0" do_num="4" value="0" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=0" model="0" do_num="10" value="0" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂缓存放充电器盒上方" model="0" target="LR28" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂缓存放充电器盒" model="0" target="LR29" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="内盒治具真空 DO19=1" model="0" do_num="19" value="1" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂缓存放充电器盒上方" model="0" target="LR28" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝下）" model="0" target="JR14" speed="v5" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝配件盒）" model="0" target="JR15" speed="v5" />
+          <RobotMoveL name="左臂：扫码2" model="0" target="LR81" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂拉开抽屉起始位前置位" model="0" target="LR31" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂中间升降气缸 DO17=1" model="0" do_num="17" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+        </Sequence>
+        <Sequence name="拉开配件盒并准备取线材">
+          <RobotMoveL name="左臂：左臂移动左臂拉开抽屉起始位" model="0" target="LR32" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂中间吸嘴 DO14=1" model="0" do_num="14" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂拉开抽屉结束位" model="0" target="LR33" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂中间吸嘴 DO14=0" model="0" do_num="14" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂中间升降气缸 DO17=0" model="0" do_num="17" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂拉开抽屉过度位（夹爪姿态朝配件盒）" model="0" target="L-JR15" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝下）" model="0" target="JR14" speed="v5" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂取放充电头旋转抬高过度点" model="0" target="JR17" speed="v5" />
+            <RobotMoveJ name="右臂：右臂取放数据线旋转抬高过度点" model="1" target="JR18" speed="v5" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂取放充电头旋转降低过度点" model="0" target="L-JR19" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取放数据线旋转降低过度点" model="1" target="L-JR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂取充电头上方" model="0" target="LR50" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取充电线上方" model="1" target="LR48" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂取充电头" model="0" target="LR51" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取充电线" model="1" target="LR49" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=1" model="0" do_num="11" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+        </Sequence>
+        <Sequence name="取充电头和数据线并装盒">
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=1" model="0" do_num="9" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂取充电头上方" model="0" target="LR50" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取充电线上方" model="1" target="LR48" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂取放充电头旋转降低过度点" model="0" target="L-JR19" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取放数据线旋转降低过度点" model="1" target="L-JR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂取放充电头旋转抬高过度点" model="0" target="JR17" speed="v5" />
+            <RobotMoveJ name="右臂：右臂取放数据线旋转抬高过度点" model="1" target="JR18" speed="v5" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=1" model="0" do_num="11" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂取完充电头后放料过度位" model="0" target="JR22" speed="v5" />
+            <RobotMoveL name="右臂：右臂取完数据线后放料过度位" model="1" target="L-JR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotMoveL name="右臂：右臂抽屉放充电线上方" model="1" target="LR53" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="右臂：右臂抽屉放充电线" model="1" target="LR54" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="右臂：右臂抽屉放充电线下压位" model="1" target="LR55" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="右臂：右臂抽屉放充电线上方" model="1" target="LR53" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="右臂：扫描3" model="1" target="LR82" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="右臂：右臂抽屉放充电线上方" model="1" target="LR53" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂取完充电头后放料过度位" model="0" target="JR22" speed="v5" />
+            <RobotMoveJ name="右臂：右臂取完数据线后放料过度位" model="1" target="JR23" speed="v5" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂抽屉放充电头上方" model="0" target="LR56" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：扫码4" model="1" target="LR83" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂抽屉放充电头" model="0" target="LR57" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取完数据线后放料过度位" model="1" target="L-JR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂抽屉放充电头上方" model="0" target="LR56" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝下）" model="0" target="JR14" speed="v5" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝配件盒）" model="0" target="JR15" speed="v5" />
+          <RobotMoveL name="左臂：左臂拉开抽屉结束位" model="0" target="LR33" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂中间升降气缸 DO17=1" model="0" do_num="17" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+        </Sequence>
+        <Sequence name="抽屉复位并回配件盒上方">
+          <RobotMoveL name="左臂：左臂移动左臂拉开抽屉起始位" model="0" target="LR32" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂中间升降气缸 DO17=0" model="0" do_num="17" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂拉开抽屉过度位（夹爪姿态朝配件盒）" model="0" target="L-JR15" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="左臂：左臂拉开抽屉过度位（夹爪姿态朝下）" model="0" target="JR14" speed="v5" />
+          <RobotMoveL name="左臂：左臂缓存放充电器盒上方" model="0" target="LR28" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=1" model="0" do_num="16" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+        </Sequence>
+        <Sequence name="双臂整理并放托板">
+          <RobotMoveL name="左臂：左臂缓存放充电器盒" model="0" target="LR29" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="内盒治具真空 DO19=0" model="0" do_num="19" value="0" />
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=1" model="0" do_num="13" value="1" />
+          <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          <RobotWait name="右臂等待 200 ms" model="1" msec="200" />
+          <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          <RobotMoveL name="左臂：左臂缓存放充电器盒上方" model="0" target="LR28" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主定位吸充电器盒上方" model="0" target="LR26" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板上方" model="1" target="LR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotMoveL name="左臂：左臂主盒放配件盒倾斜预放位" model="0" target="LR59" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=1" model="0" do_num="4" value="1" />
+          <RobotMoveL name="左臂：左臂主盒放配件盒水平预放位" model="0" target="LR60" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=1" model="0" do_num="10" value="1" />
+          <RobotMoveL name="左臂：左臂主盒放配件盒水平贴边预放位" model="0" target="LR61" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=1" model="0" do_num="11" value="1" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+            <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒放配件盒丢盒位" model="0" target="LR62" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板" model="1" target="LR24" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="右臂左吸嘴 DO8=1" model="0" do_num="8" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=1" model="0" do_num="9" value="1" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+            <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+            <RobotWait name="右臂等待 100 ms" model="1" msec="100" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂主盒放配件盒水平预放位" model="0" target="LR60" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="左臂：左臂主盒压配件盒说明书盒位" model="0" target="LR63" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主定位吸充电器盒上方" model="0" target="LR26" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂缓存放手机托板上方" model="1" target="LR23" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒定位取完盒盖过度位" model="0" target="LR16" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取完手机托板过度点" model="1" target="LR22" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒缓存放盒盖上方" model="0" target="LR17" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂主定位台取手机托板上方" model="1" target="LR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左升降气缸 DO15=1" model="0" do_num="15" value="1" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=1" model="0" do_num="16" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+        </Sequence>
+        <Sequence name="盖盒、取盒并输出">
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒缓存放盒盖" model="0" target="LR18" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂主定位台取手机托板" model="1" target="LR21" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左吸嘴 DO12=1" model="0" do_num="12" value="1" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=1" model="0" do_num="13" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 200 ms" model="0" msec="200" />
+          <HrcsiSetDO name="右臂左吸嘴 DO8=0" model="0" do_num="8" value="0" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=0" model="0" do_num="10" value="0" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒缓存放盒盖上方" model="0" target="LR17" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂主定位台取手机托板上方" model="1" target="LR20" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=0" model="0" do_num="4" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒定位取完盒盖过度位" model="0" target="LR16" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：右臂取完手机托板过度点" model="1" target="LR22" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒定位取盒盖上方" model="0" target="LR14" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+          </RobotSync>
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveL name="左臂：左臂主盒定位取盒盖" model="0" target="LR15" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+            <RobotMoveL name="右臂：机器人左臂把外盒放到主盒上，吸盘断气/右臂主盒取料前方位，气缸伸出" model="1" target="LR65" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="左臂左吸嘴 DO12=0" model="0" do_num="12" value="0" />
+          <HrcsiSetDO name="左臂右吸嘴 DO13=0" model="0" do_num="13" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=1" model="0" do_num="10" value="1" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=1" model="0" do_num="11" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="左臂：左臂主盒定位取盒盖上方" model="0" target="LR14" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="左臂左升降气缸 DO15=0" model="0" do_num="15" value="0" />
+          <HrcsiSetDO name="左臂右升降气缸 DO16=0" model="0" do_num="16" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂待机位" model="0" target="JR3" speed="v5" />
+            <RobotMoveL name="右臂：左臂待机/右臂主盒取料" model="1" target="LR66" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          </RobotSync>
+          <HrcsiSetDO name="右臂左吸嘴 DO8=1" model="0" do_num="8" value="1" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=1" model="0" do_num="9" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="主盒治具真空 DO18=0" model="0" do_num="18" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂左升降气缸 DO10=0" model="0" do_num="10" value="0" />
+          <HrcsiSetDO name="右臂右升降气缸 DO11=0" model="0" do_num="11" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=1" model="0" do_num="4" value="1" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <HrcsiSetDO name="右臂左吸嘴 DO8=0" model="0" do_num="8" value="0" />
+          <HrcsiSetDO name="右臂右吸嘴 DO9=0" model="0" do_num="9" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="右臂：右臂移动到主盒取料待机点" model="1" target="LR64" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂腰部旋转避让位" model="0" target="JR4" speed="v5" />
+            <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+          </RobotSync>
+          <RobotMoveJ name="右臂：右臂放盒过度位" model="1" target="JR25" speed="v5" />
+          <RobotMoveJ name="腰部：腰部右臂放料旋转位" model="2" target="JR8" speed="v5" />
+          <RobotMoveL name="右臂：右臂放盒抬高位" model="1" target="LR68" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveL name="右臂：右臂放盒位" model="1" target="LR69" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <HrcsiSetDO name="右臂电爪夹紧 DO4=0" model="0" do_num="4" value="0" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotWait name="左臂等待 100 ms" model="0" msec="100" />
+          <RobotMoveL name="右臂：右臂放盒抬高位" model="1" target="LR68" speed="v5" ratio="4" zone_position="0" zone_orientation="0" optimal="false" />
+          <RobotMoveJ name="右臂：右臂放盒过度位" model="1" target="JR25" speed="v5" />
+          <RobotMoveJ name="腰部：腰部原点" model="2" target="JR6" speed="v5" />
+          <RobotSync name="同步：左臂、右臂">
+            <RobotMoveJ name="左臂：左臂待机位" model="0" target="JR3" speed="v5" />
+            <RobotMoveJ name="右臂：右臂待机位" model="1" target="JR0" speed="v5" />
+          </RobotSync>
+        </Sequence>
+      </Sequence>
+    </RobotTask>
+  </BehaviorTree>
+</root>

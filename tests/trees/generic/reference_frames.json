@@ -1,0 +1,1370 @@
+[
+  {
+    "command": "{SetHrcsiDout --do_num=1 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=2 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=3 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=5 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=6 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=7 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=14 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=17 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=18 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=19 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=20 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=21 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=22 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=23 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=24 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR3 --speed=v5||MoveAbsJ --jointtarget=JR0 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||NotRunExecute||MoveAbsJ --jointtarget=JR6 --speed=v5}"
+  },
+  {
+    "command": "{Sleep --count=10||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR10 --speed=v5||MoveAbsJ --jointtarget=JR1 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||NotRunExecute||MoveAbsJ --jointtarget=JR7 --speed=v5}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR80-wobj --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR7-wobj --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=200||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR8-wobj --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=6 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR7-wobj --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR10 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||NotRunExecute||MoveAbsJ --jointtarget=JR6 --speed=v5}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR3 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR11 --speed=v5||MoveAbsJ --jointtarget=JR0 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR10 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR11 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=18 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=6 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR12 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR12 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR14 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR15 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=200||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR14 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR16 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR17 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR18 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR17 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR17 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR21 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR16 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR22 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR26 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR27 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR24 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=200||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=200||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR26 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR28 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR29 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=19 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR28 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR14 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR15 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR81 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR31 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=17 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR32 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=14 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR33 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=14 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=17 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=L-JR15 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR14 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR17 --speed=v5||MoveAbsJ --jointtarget=JR18 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=L-JR19 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=L-JR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR50 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR48 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR51 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR49 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR50 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR48 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=L-JR19 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=L-JR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR17 --speed=v5||MoveAbsJ --jointtarget=JR18 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=L-JR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR22 --speed=v5||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR53 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR54 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR55 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR53 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR82 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR53 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR22 --speed=v5||MoveAbsJ --jointtarget=JR23 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR56 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR83 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR57 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=L-JR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR56 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR14 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR15 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR33 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=17 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR32 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=17 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=L-JR15 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR14 --speed=v5||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR28 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR29 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=19 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||Sleep --count=200||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR28 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR26 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR59 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR60 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR61 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR62 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR24 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||Sleep --count=100||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR60 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR63 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR26 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR23 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR16 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR22 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR17 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR18 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR21 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=200||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR17 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR20 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR16 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR22 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR14 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveAbsJ --jointtarget=JR0 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR15 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||MoveBlend --type=insert_line --robottarget=LR65 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=12 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=13 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=first_insert||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=insert_line --robottarget=LR14 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{MoveBlend --type=start||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=15 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=16 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR66 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR3 --speed=v5||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=18 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=10 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=11 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=1||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=8 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=9 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR64 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR4 --speed=v5||MoveAbsJ --jointtarget=JR0 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveAbsJ --jointtarget=JR25 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||NotRunExecute||MoveAbsJ --jointtarget=JR8 --speed=v5}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR68 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR69 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{SetHrcsiDout --do_num=4 --value=0||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{Sleep --count=100||NotRunExecute||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=first_insert||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=insert_line --robottarget=LR68 --ratio=4 --speed=v5 --zone={0,0} --is_optimal=0||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveBlend --type=start||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||MoveAbsJ --jointtarget=JR25 --speed=v5||NotRunExecute}"
+  },
+  {
+    "command": "{NotRunExecute||NotRunExecute||MoveAbsJ --jointtarget=JR6 --speed=v5}"
+  },
+  {
+    "command": "{MoveAbsJ --jointtarget=JR3 --speed=v5||MoveAbsJ --jointtarget=JR0 --speed=v5||NotRunExecute}"
+  }
+]
